@@ -1,0 +1,1272 @@
+Q. What is Software testing ?
+
+Answer:- Process of finding defects in software is called software testing.
+Executing the program with an intention to find defects is called software testing. 
+Verifying the fucntionality of an application against the requirement specification is called software testing.
+
+
+
+Q. Why we need software testing?
+
+Answer:- To find the defects and bugs in a software before launching it to the customer we need to do software testing.
+
+
+--------------------------------------------------------------------
+Q. What is white box testing ?
+
+Answer:- It is done by the developers, the developers check each and every line of the code.
+
+To do white box testing the person should have programming knowledge, internal code design knowledge.
+
+The developers gives the input, they see the source code and check the output.
+
+
+
+White box testing is done in many ways like:
+
+Path testing:
+By writing the flow graph of the software and testing each and every independent path is called path testing.
+
+
+Condition testing: 
+Test the conditions in the software by giving both true and false values.
+
+Loop testing:
+Test the loops for all the cycles, insufficient cycles are not enough.
+
+
+"shall I explain in details?"
+
+Memory Point of view WBT:
+
+- Developer make a software of 5gb and install it in a device with 5gb free space, during testing we get an error "Extra 1 mb" needed.
+
+- Developer checks the source code line by line from memory point of view.
+
+
+Performance point of view WBT:
+
+- Developer writes a contact application.
+
+- The contact application opens after 5 minutes of clicking.
+
+- Developer checks each line of source code to find out the problem.
+
+- The developer does that from performance point of view, so it is called Performance point of view WBT.
+
+-------------------------------------------------------------------
+
+
+
+--------------------------------------------------------------------
+Q. What is black box testing?
+
+Answer:- We are checking whether feature's or behaviour or functionalities are working according to the requirements, we call it as black box testing.
+
+The backend and source code is not visible to the front end test engineers, so it is called black box testing.
+
+
+
+
+--------------------------------------------------------------------
+Q. What is functional testing?
+
+Answer:- Testing each and every component of an application thoroughly and idependently against the required specification, we call it as functional testing.
+
+
+
+Rules of doing functional testing:
+
+- Always testing start with valid data, if the application is accepting valid data then only we move on to test component of an application by giving invalid data.
+
+- If the application is accepting one invalid data then we still continue testing the same component by giving some more invalid data.
+
+- Test engineers should not assume or propose requirements.
+
+- While doing testing we should not give same input in different form which does not make any sense. By testing the application this way we are going to waste our time.
+
+- We should test the application by giving only those data that makes sense, by doing this type of testing we are going to check the application for more bugs in optimum time.
+
+- We should not test the component of an application by giving insufficient set of scenarios. By doing this type of testing we are going to miss lots of bugs. 
+
+
+
+- WAYS OF DOING FUNCTIONAL TESTING
+
+* Positive functional testing : Giving valid or expected data and testing the component of an application we call it as positive functional testing.
+
+
+* Negative functional testing: Giving invalid or unexpected data and testing the component of an application we call it as negative functional testing.
+
+
+
+
+
+"shall I explain in details?"
+
+ASSIGNMENT 1:
+-------------------------------------------------------------------
+
+
+
+Q. What is integration testing?
+
+Answer:- Testing if dataflow is happenting between two modules of an application is called integration testing.
+
+
+
+Steps to do integration testing:
+
+- First we log in to the 1st module and we enter some data.
+
+- We log out of the first module and log in to the 2nd module.
+
+- We check if the data entered in 1st module is available in the 2nd module.
+
+- If data is available then dataflow is happening between the two modules and integration testing is pass.
+
+- If the data is not available then dataflow is not happening and integration testing has failed.
+
+
+
+Types of integration testing:
+
+1. INCREMENTAL INTEGRATION TESTING:
+
+Incrementally add the modules and test the dataflow between the modules, we call it as incremental integration testing.
+
+
+Types of incremental testing:
+
+A. Top down incremental integration testing: 
+Incrementally add the modules and test the data flow between the modules. Make sure that the module that you are adding is a child of previous one.
+
+B. Bottom up incremental integration testing:
+Incrementally add the modules and test the dataflow between the modules, make sure that the module that you are adding is a parent of the previous module.
+
+
+
+2. NON-INCREMENTAL INTEGRATION TESTING:
+Combine all the modules at a shot and test the dataflow between the modules, we call it as non incremental integration testing.
+
+The root of the bug is very difficult to identify in non incrementall integration testing.
+
+
+
+
++ve Integration testing: 
+Giving valid or expected data and testing the data flow between the modules, we call it as +ve integration testing.
+
+
+-ve Integration testing:
+Giving invalid or unexpected data and testing the data flow between the modules, we call it as -ve integration testing.
+
+
+
+"shall I explain in details?"
+
+
+ASSIGNMENT 2:
+-------------------------------------------------------------------
+
+
+Q. What is system testing?
+
+Answer:- It is an end to end testing where in testing environment it is just similar to production environment.
+
+
+When according to the requirements end to end data flow is working it means end to end testing has passed.
+
+How to do end to end testing:
+
+- While doing end to end testing test engineers should understand the main business flow of the application and document it and test it first.
+
+- If it is working fine, then test engineer should think about alternative business flow, document it and test it.
+
+
+
+ASSIGNMENT 3:
+
+
+
+
+Testing environment: 
+- For the testing team a server is arranged and many client machines connect to it, each test engineer would use one of the client machines. The network and LAN is arranged for the servers. This entire setup is called testing environment.
+
+
+Production environment:
+- In customer place, customer arrange a big server with it's own LAN, network and infrastructure. A number of client machines are connected to it and given to the staff of client. This setup is called Production environment.
+
+
+
+Why Testing and Production environment should be similar?
+
+- In Production environment the software is used under heavy load and many users use it, the software may crash under such heavy load.
+
+So we need to test the software under similar configuratrion to check if the software can handle heavy load and work in the production environment configuration.
+
+
+
+
+
+
+
+Why end to end testing is part of system testing?
+
+- While doing end to end testing we are indirectly doing basic functional testing scenarios, basic integration testing scenarios but more foucs on system testing.
+
+
+
+-------------------------------------------------------------------
+
+
+
+Q. What is release?
+
+Answer:- Starting from requirement collection to till launching product to customer the entire process and duration we call it one release.
+
+
+
+Q. What is patch?
+
+Answer:- It is a software which contains modified or new programs.
+
+
+
+
+Q. What is hot fix?
+
+Answer:- While developer are busy working on a release of the software, customer is using the old release in it's production enviroment and he finds a bug in the software, customer calls the project manager and informs about the bug, the project manager then calls the developers, the developers stop working on the new release and start working to fix the bug immediately by taking a copy of the old release.
+Developer first fix the bug and then the testing team tests the bug fixes, after the testing is passed the developers create a patch with the newfixes and give it to the customer.
+The customer install the pacth in his production server and this fixes the problem.
+
+This is called hot fix.
+
+
+
+
+
+Q. What is incident management?
+
+Answer:- After doing a hot fix the project manager calls an immediate meeting and a root cause analysis is done to find the root of the bug.
+The entire process to find the bug and fixing it is documented and posted in company centralized places.
+
+The whole concept of customer finding a bug to root cause analysis is called incident management.
+
+
+-------------------------------------------------------------------
+
+
+
+
+Q. What is acceptance testing?
+
+Answer:- Acceptance testing is end to end testing done by end users where in they use the software in their business for particular amount of time and check whether the software is capable of handling it or not.
+It is also called user acceptance testing or Application under testing.
+
+It is end to end testing done by engineers sitting in customer plcae where they create real time business situation to check if the software can handle it or not.
+
+
+Q. Why customer do acceptance testing?
+
+- To check whether the requirements were understood by the company or not and developed right features or not.
+
+- The software company might push the software with a lot of bugs under business pressure.
+
+- To check whether all the end to end business flow are functionally working.
+
+- To check whether all important or critical features are working fine. 
+
+
+
+Q. Why more rounds of acceptance testing is done?
+
+- In the beginning itself the testing has not done a good job.
+
+- Whatever the requirements given by the customer in the beginning itself were not understandable.
+
+- After receiving the product the customer gets new ideas and he wants a lot of changes.
+
+
+
+
+"In real life customer does acceptance testing in many approaches"
+
+shall I explain in details?
+
+Approach 1: It is end to end testing done by engineers sitting in customer plcae where they create real time business situation to check if the software can handle it or not.
+
+Drawback : If the software is very big with many features then the IT team may not finish testing in time for the customer to use it in his business.
+
+
+
+Approach 2: The customer gives the software to it's end user, whoever will be using it in customer place.
+If the end user finds a bug then they inform it to the customer who then inform it to the project manager. The project manager then ask it's developers to fix the bug and then testing team retest the bug fixes, after the bug gets fixed the developers make a patch and sent it to the customer.
+
+Drawback: The end user may not be fully educated and they may ask for leaves to learn to use the software.
+
+
+
+
+Approach 3: Customer call the same test engineers to his place who tested the software in the software company.
+
+In customer place the test engineers do not test the software according to their approach as they have already tested it that way. Test engineers test the software according to the customer's user activity document.
+
+Drawback: Customer may have to pay huge amount of money to call the test engineers to their place.
+
+
+
+Approach 4: Customer do acceptance out sourcing for cost reduction.
+
+Customer goes to software company place and takes spme test engineers and do acceptance testing there for a lower cost
+
+
+-------------------------------------------------------------------
+
+
+
+Q. What is smke testing?
+
+Answer:- Testing critical features of an application before doing thorough testing is called smoke testing.
+We test only critical features at very high level.
+
+Q. Why we do smoke testing?
+
+- to check whether the product is testable or not.
+
+- test the critical features in the beginning itself and find the bugs and send it to the developers so that the developers will get sufficient time to fix those bugs.
+
+- to check whether the product is properly installed or not.
+While doing smoke testing if the product is not properly installed we can find out what is the propblem, we can uninstall the product and reinstall it.
+
+
+- Development team giving new build means they have added some new changes, those new changes might break the very basic features, to find out that in the very beginning we do smoke testing.
+
+
+- Smoke testing is like a health checkup before we do a thorough testing or deep testing.
+
+
+Q. When we do smoke testing?
+
+-  As soon as build comes from development team we do smoke testing.
+
+- In the beginning of every test cycle execution we do smoke testing.
+
+- Testing start with smoke testing.
+
+
+
+Note:
+
+- In smoke testing we test basic or critical features only.
+
+- In smoke testing we do not do -ve testing because time available is very less.
+
+- In smoke testing we are following the requirements.
+
+
+- While doing smoke testing we cover basic functional testing scenarios, basic integration testing scenarios, basic system testing scenarios.
+
+
+
+
+
+
+
+"shall I explain in details?"
+
+
+
+ASSIGNMENT 4:
+
+-------------------------------------------------------------------
+
+
+
+Q. What is Adhoc testing?
+
+Answer:- Testing the application randomly we call it adhoc testing.
+
+
+It is also called random testing/ monkey testing/ gorilla testing.
+
+
+
+Why we do adhoc testing?
+
+
+1. Test engineer would have tested the software by doing all proper testing(FT, IT, ST), launched to market, in marker end user might use the application randomly and break it.
+Because of thatbad name spreads in the market and number of users who would have used the software will become less. So to avoid that.
+
+2. If we test the software according to the requirements then number of bugs we will find will be less.
+So come up with your own creative ideas and test the software randomly, the number of bugs we will catch is more.
+
+3. Somehow break the product.
+
+4. To check whether the software is accepting random activity.
+
+
+
+
+
+When we do Adhoc testing?
+
+1. Once the product become functionally stable and number of bugs we find is less. In order to increase bug nos.
+
+2. While doing thorough testing if no of bugs we find are more, at this stage we don't think about Adhoc testing.
+
+3. There is no chance to skip adhoc testing.
+
+4. Whenever testing team gets free time they do adhoc testing.
+
+
+Note:
+
+- Adhoc testing is basically -ve testing.
+
+- We do not follow the requirements while doing adhoc testing.
+
+- Each creative idea is called one Adhoc scenario.
+
+
+
+Ways of doing Adhoc testing:
+
+1. Testing the application with logic:
+
+- Login to gmail.
+
+- Go to draft page.
+
+- Copy the url.
+
+- Paste the url in a different browser.
+
+- Login page should be displayed.
+
+- Adhoc test is passed.
+
+-----------------------
+
+- login to gmail.
+
+- go to trash page.
+
+- logout of the gmail.
+
+- press the back button.
+
+-Login page should be displayed.
+
+- Adhoc test is passed.
+
+
+
+
+
+2. Testing the application without logic:
+
+- Keep pressing the seek bar icon for 5 minutes and check if the seek bar is working fine.
+
+- If working fine then Adhoc test pass.
+
+------------------
+
+- Keep the palm of the hand in the screen.
+
+- All buttons should get pressed.
+
+- Check if the application is working fine.
+
+- If yes then Adhoc test is pass.
+
+
+
+-------------------------------------------------------------------
+
+
+Q. What is Globalization testing?
+
+Answer:- Testing the software which is developed for multiple languages is called globalization testing.
+
+* There are two types of globalization testing:
+
+1. Internationalization testing(I18N testing):
+
+In this way we test the text and text fields for multiple languages.
+
+
+2. Localization testing (L10N testing):
+
+We check whether certain features are localized according to the country standard.
+
+In L10N testing we only test number format fields.
+
+
+
+Q. Why we do I18N testing:
+
+- To check whether entire software displayed in right language.
+
+- To check whether right features displayed in right place or not.
+
+- To check whether functionality of the features are broken after converting from one language to another language.
+
+
+
+Q. How to do I18N testting:
+
+* Flow 1 : Homepage in English language. 
+
+- Test engineer opens the browser and enters the url and click on go button,
+the request goes to the server. By default page name page name = Homepage language = english, this request goes to server.
+
+- Server receives the request, looks into the request and reads the programme, server comes to know that the user wants the Home page.
+
+- Then execution link connect to Homepage.jsp program and the Homepage.jsp program starts execution.
+
+- Developer would have developed the program in such a way that whenever it starts execution, beginning of the code should read language code.
+
+- After reading the language code the Homepage.jsp program comes to know that user wants to display the home page in english language.
+
+
+- Then the program link connects to the Homepage property folder, inside it connects to the english property file.
+
+
+- Once the connection is established between program and property file, then remaining part of the code of that same program goes inside english property file and publish the content displayed on users browser window.
+
+
+- Now the test engineers test 3 things.
+
+1. He will check whether entire software displayed in right language.
+
+2. He will check whether right features displayed in right place or not.
+
+3. He will check whether functionality of the features are broken after converting from one language to another language.
+
+
+- If no bugs are found then I18N testing is passed on Home page in english language.
+
+
+
+
+
+*Flow 2 : Profile page in English language. 
+
+- Test engineer opens the browser and enters the url and click on go button,
+the request goes to the server. By default page name page name = Profile page language = english, this request goes to server.
+
+- Server receives the request, looks into the request and reads the programme, server comes to know that the user wants the Profile page.
+
+- Then execution link connect to Profile.jsp program and the Profile.jsp program starts execution.
+
+- Developer would have developed the program in such a way that whenever it starts execution, beginning of the code should read language code.
+
+- After reading the language code the Profile.jsp program comes to know that user wants to display the Profile page in english language.
+
+
+- Then the program link connects to the Profilepage property folder, inside it connects to the english property file.
+
+
+- Once the connection is established between program and property file, then remaining part of the code of that same program goes inside english property file and publish the content displayed on users browser window.
+
+
+- Now the test engineers test 3 things.
+
+1. He will check whether entire software displayed in right language.
+
+2. He will check whether right features displayed in right place or not.
+
+3. He will check whether functionality of the features are broken after converting from one language to another language.
+
+
+- If no bugs are found then I18N testing is passed on Profile page in english language.
+
+
+*Flow 3 : Homepage in Hindi language. 
+
+- Test engineer opens the browser and enters the url and click on go button,
+the request goes to the server. By default page name page name = Homepage language = hindi, this request goes to server.
+
+- Server receives the request, looks into the request and reads the programme, server comes to know that the user wants the Home page.
+
+- Then execution link connect to Homepage.jsp program and the Homepage.jsp program starts execution.
+
+- Developer would have developed the program in such a way that whenever it starts execution, beginning of the code should read language code.
+
+- After reading the language code the Homepage.jsp program comes to know that user wants to display the home page in hindi language.
+
+
+- Then the program link connects to the Homepage property folder, inside it connects to the hindi property file.
+
+
+- Once the connection is established between program and property file, then remaining part of the code of that same program goes inside hindi property file and publish the content displayed on users browser window.
+
+
+- Now the test engineers test 3 things.
+
+1. He will check whether entire software displayed in right language.
+
+2. He will check whether right features displayed in right place or not.
+
+3. He will check whether functionality of the features are broken after converting from one language to another language.
+
+
+- If no bugs are found then I18N testing is passed on Home page in hindi language.
+
+
+BUGS FOUND WHILE DOING L18N TESTING:
+
+
+Bugs I found on Homepage:
+
+
+1. Whenever I Select english language, entire page displayed in english language and all features displayed in english language.
+Whenever I Select hindi language, entire page displayed in hindi language and all features displayed in hindi language.
+
+Whenever I Select bengali language, entire page displayed in bengali language but if I click on the account button and then click on the feedback button a popup window opens and there "Give feedback about your facebook experience" text is still written in english language.
+
+This is a Bug I found in my project while doing I18N testing.
+
+
+
+2. Whenever I Select english language, entire page displayed in english language and all features displayed in english language.
+Whenever I Select hindi language, entire page displayed in hindi language and all features displayed in hindi language.
+
+Whenever I Select bengali language, entire page displayed in bengali language but in the left side of the homepage "Watch" button is still present in english language.
+
+This is a Bug I found in my project while doing I18N testing.
+
+
+
+
+3. Whenever I Select english language, entire page displayed in english language and all features displayed in english language.
+Whenever I Select hindi language, entire page displayed in hindi language and all features displayed in hindi language.
+
+Whenever I Select bengali language, entire page displayed in bengali language but in the left side of homepage a button "See less" is still displayed in english language.
+
+This is a Bug I found in my project while doing I18N testing.
+
+
+
+
+Bugs I found on Facebook friend page:
+
+
+
+
+4. Whenever I Select english language, entire page displayed in english language and all features displayed in english language.
+Whenever I Select hindi language, entire page displayed in hindi language and all features displayed in hindi language.
+
+Whenever I Select bengali language, entire page displayed in bengali language but on the left side of the page a link "Custom Lists" is still displayed in english language.
+
+This is a Bug I found in my project while doing I18N testing.
+
+
+L10N Testing:
+
+Bugs I found on the signup page:
+
+
+6. When I changed the location to Spain, and tried to enter a Indian phone number, it accepted the Indian phone number.
+
+This is a bug I found while doing L10N testing.
+
+------------------------------------------------------------------
+
+
+Q. What is exploratory testing?
+
+Answer:- Explore the application and understand the application, based on understanding identify all possible scenarios(FT, IT, ST) and document the scenarios.
+
+Then test the product based on documented scenarios, we call it as exploratory testing.
+
+*Drawbacks of exploratory testing:
+
+1. Chances are there we might misunderstand features as bug. 
+e.g. If name text field should accept charcters and digits, but Test engineer might think it is a bug that name text field accepting digits.
+
+
+
+
+2. Chances are there we might miss understand bug as feature.
+
+e.g. phone no text field should accept 10 digits number with +91 code, but test engineer thought it is a feature when the text field  accepted 10 digits only, which is actually a bug.
+
+
+3. Chances are there sometimes feature is missing,but we never come to know that, why it is missing.
+
+e.g. Testers are testing the sales feature while developer removed  the sales features in next build after custromer asked them to, test engineer never got to know it and thought it is a bug.
+
+
+* Solutions for the drawbacks of exploratory testing:
+
+1. Interact with testing team, development team, project manager, Business analyst or customer closely and try to understand the project.
+
+2. Based on domain knowledge tyr to test the product.
+
+3.By using common sense we can tes some features.
+
+4. By referring and comparing similar application, which are released in the market and try to test the product and try to complete the task within given time.
+
+
+
+
+Q. Why/ When we do exploratory testing?
+
+1. When there is no requirement document in the project.
+
+2. Requirement document is there but there is no time to go through it.
+
+3. Requirement document is there but that is not understandable.
+
+
+
+Q. How do we manage exploratory testing?
+
+- By documenting the scenarios or by writing test cases we manage exploratory testing. 
+
+
+
+
+Q. In my Project I don't have requirement, how do you test the product?
+
+Answer:-
+
+Fresher: I will do exploratory testing. "continue explaining exploratory testing."
+
+
+Experience:
+
+As a test engineer I can not say do not test the product if there is no requirements, even though there is no requirement in the product I can test the product by applying exploratory testing technique.
+
+What I will do is I will explore the application, understand the application and based on my understanding I will identify and document all the possible scenarios and then test the product by executing documented scenario. 
+
+While doing this type of testing chances are there I might do some mistakes, I might misunderstand feature as a bug or b ug as a feature or the feature might be missing and I never come to know why it is missing.
+
+What is my solution is I will try to interact with my testing team, development team, project manager, and customer and try to understand the product.
+
+Based on domain knowledge I will try to test the product and by using common sense I can test some features, by comparing with similar application that are in the market I can try to test some features and complete the task within time.
+
+
+
+
+
+
+
+Q. In my project I have very less time, how do you test the product?
+
+Answer:- 
+
+When time is less our objective is :
+
+1. To find more and more bugs.
+
+2. To cover maximum possible feature.
+
+3. To make sure that important and critical features are tested.
+
+4. Avoid certain tasks (It contains testing time which is really not important).
+
+
+Elaboration:
+
+1. To find more and more bugs with less time, what I will do is:
+
+a. I test new features or modified features first, so that I can find more number of bugs.
+
+b. Whichever the feature got impact because of the change I test that feature fisrt, so that I can find more number of bugs.
+
+c. I test the features which is developed by new developer:
+ 
+ By adopting agile methodology, everybody sitting in one room we easily come to know who joined newly and what feature they developed.
+
+
+d. I test the features which are developed by developer who normally does mistakes.
+
+
+
+
+
+2. To cover maximum possible features.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
